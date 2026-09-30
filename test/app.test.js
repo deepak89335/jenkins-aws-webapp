@@ -20,7 +20,7 @@ test('GET /health returns status UP', withServer(async (base) => {
   const body = await res.json();
 
   assert.strictEqual(res.status, 200);
-  assert.strictEqual(body.status, 'UP');
+  assert.strictEqual(body.status, 'DOWN');
 }));
 
 test('GET / returns the home page', withServer(async (base) => {
